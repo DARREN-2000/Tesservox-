@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../access/accessibility_controller.dart';
 import '../domain/board.dart';
 
 /// Fitzgerald key colours.
@@ -53,10 +54,12 @@ class TileButton extends StatelessWidget {
           child: Material(
             color: background,
             borderRadius: BorderRadius.circular(12),
-            child: InkWell(
-              onTap: onPressed,
-              borderRadius: BorderRadius.circular(12),
-              child: Container(
+            child: DwellDetector(
+              onTrigger: onPressed,
+              child: InkWell(
+                onTap: onPressed,
+                borderRadius: BorderRadius.circular(12),
+                child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
