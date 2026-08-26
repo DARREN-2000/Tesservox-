@@ -6,13 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vaani/access/access_settings.dart';
-import 'package:vaani/data/pack_loader.dart';
-import 'package:vaani/data/settings_store.dart';
-import 'package:vaani/data/utterance_log.dart';
-import 'package:vaani/speech/speaker.dart';
-import 'package:vaani/state/providers.dart';
-import 'package:vaani/ui/speak_page.dart';
+import 'package:tesservox/access/access_settings.dart';
+import 'package:tesservox/data/pack_loader.dart';
+import 'package:tesservox/data/settings_store.dart';
+import 'package:tesservox/data/utterance_log.dart';
+import 'package:tesservox/speech/speaker.dart';
+import 'package:tesservox/state/providers.dart';
+import 'package:tesservox/ui/speak_page.dart';
 
 /// End-to-end tests for the only screen that really matters.
 ///

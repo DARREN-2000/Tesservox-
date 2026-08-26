@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vaani/domain/hlc.dart';
+import 'package:tesservox/domain/hlc.dart';
 
 void main() {
   test('tick is monotonic even when the wall clock jumps backwards', () {

@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vaani/domain/hlc.dart';
-import 'package:vaani/domain/ops.dart';
+import 'package:tesservox/domain/hlc.dart';
+import 'package:tesservox/domain/ops.dart';
 
 /// Two devices edit the same board with no server between them. These tests
 /// state the properties that make that safe:

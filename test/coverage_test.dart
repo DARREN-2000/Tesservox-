@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vaani/domain/coverage.dart';
-import 'package:vaani/domain/utterance.dart';
+import 'package:tesservox/domain/coverage.dart';
+import 'package:tesservox/domain/utterance.dart';
 
 void main() {
   final DateTime now = DateTime.utc(2026, 8, 20, 19);

@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vaani/domain/board.dart';
+import 'package:tesservox/domain/board.dart';
 
 /// These tests are the reason a missing translation can never reach a user.
 ///

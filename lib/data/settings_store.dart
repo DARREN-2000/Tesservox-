@@ -12,7 +12,7 @@ import '../access/access_settings.dart';
 class SettingsStore {
   const SettingsStore(this._prefs);
 
-  static const String _key = 'vaani.access.v1';
+  static const String _key = 'tesservox.access.v1';
 
   static Future<SettingsStore> open() async =>
       SettingsStore(await SharedPreferences.getInstance());

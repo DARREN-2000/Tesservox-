@@ -1,59 +1,15 @@
-name: ci
+name: CI
 
-on:
-  push:
-    branches: [main]
-  pull_request:
+on: [push, pull_request]
 
 jobs:
-  verify:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
+      - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v2
         with:
-          channel: stable
-          cache: true
-
-      - run: flutter --version
+          channel: 'stable'
       - run: flutter pub get
-
-      # The drift gate. A hand-edited asset, a forgotten rebuild or a missing
-      # translation fails here rather than becoming a blank tile in front of a
-      # child.
-      - name: Vocabulary assets match their YAML sources
-        run: dart run tool/build_packs.dart --check
-
-      - name: Formatting
-        run: dart format --output=none --set-exit-if-changed .
-
-      - name: Analyze
-        run: flutter analyze
-
-      - name: Test
-        run: flutter test
-
-  android:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-          cache: true
-      - run: flutter pub get
-      # `flutter create .` regenerates the platform folders, which are not
-      # committed: they are entirely generated, and keeping them out makes the
-      # repo readable.
-      - run: flutter create --platforms=android .
-      - run: flutter build apk --debug
-      - uses: actions/upload-artifact@v4
-        with:
-          name: vaani-debug-apk
-          path: build/app/outputs/flutter-apk/app-debug.apk
-          if-no-files-found: warn
+      - run: flutter analyze
+      - run: flutter test

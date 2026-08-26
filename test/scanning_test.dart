@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vaani/domain/scanning.dart';
+import 'package:tesservox/domain/scanning.dart';
 
 void main() {
   group('row-column scanning', () {

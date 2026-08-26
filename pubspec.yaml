@@ -1,11 +1,11 @@
-name: vaani
+name: tesservox
 description: >-
   Free, offline, multilingual AAC (augmentative and alternative communication)
   for people who cannot speak. Runs on cheap Android hardware, needs no account,
   and never sends a word off the device.
 publish_to: none
 version: 0.1.0+1
-repository: https://github.com/DARREN-2000/vaani
+repository: https://github.com/DARREN-2000/tesservox
 
 environment:
   sdk: ">=3.4.0 <4.0.0"

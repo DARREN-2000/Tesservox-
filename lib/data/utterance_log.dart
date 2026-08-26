@@ -23,7 +23,7 @@ abstract class UtteranceLog {
 class StoredUtteranceLog implements UtteranceLog {
   StoredUtteranceLog._(this._prefs, this._entries);
 
-  static const String _key = 'vaani.utterances.v1';
+  static const String _key = 'tesservox.utterances.v1';
   static const int maxEntries = 2000;
 
   static Future<StoredUtteranceLog> open() async {
