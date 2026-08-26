@@ -1,0 +1,7 @@
+{
+    "@@locale": "es",
+    "appTitle": "Tesservox",
+    "@appTitle": {
+        "description": "El título de la aplicación"
+    }
+}

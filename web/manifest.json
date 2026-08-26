@@ -1,0 +1,11 @@
+{
+    "name": "Tesservox",
+    "short_name": "Tesservox",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "description": "Free, offline, multilingual AAC.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false
+}

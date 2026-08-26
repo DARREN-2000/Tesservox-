@@ -19,6 +19,9 @@ dependencies:
   flutter_tts: ^4.0.2
   # Access settings must survive a reboot on a shared school tablet.
   shared_preferences: ^2.2.3
+  sentry_flutter: ^8.0.0
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -30,5 +33,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
   assets:
     - assets/packs/
