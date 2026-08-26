@@ -1,0 +1,219 @@
+{
+  "locale": "en",
+  "name": "English core 30",
+  "voice": "en-US",
+  "rows": 5,
+  "cols": 6,
+  "tiles": [
+    {
+      "id": "i",
+      "label": "I",
+      "speak": "I",
+      "glyph": "🙋",
+      "class": "people"
+    },
+    {
+      "id": "you",
+      "label": "you",
+      "speak": "you",
+      "glyph": "👉",
+      "class": "people"
+    },
+    {
+      "id": "my",
+      "label": "my",
+      "speak": "my",
+      "glyph": "🤚",
+      "class": "people"
+    },
+    {
+      "id": "mother",
+      "label": "mum",
+      "speak": "mum",
+      "glyph": "👩",
+      "class": "people"
+    },
+    {
+      "id": "father",
+      "label": "dad",
+      "speak": "dad",
+      "glyph": "👨",
+      "class": "people"
+    },
+    {
+      "id": "friend",
+      "label": "friend",
+      "speak": "friend",
+      "glyph": "🧑",
+      "class": "people"
+    },
+    {
+      "id": "want",
+      "label": "want",
+      "speak": "want",
+      "glyph": "🤲",
+      "class": "action"
+    },
+    {
+      "id": "go",
+      "label": "go",
+      "speak": "go",
+      "glyph": "➡️",
+      "class": "action"
+    },
+    {
+      "id": "come",
+      "label": "come",
+      "speak": "come",
+      "glyph": "⬅️",
+      "class": "action"
+    },
+    {
+      "id": "eat",
+      "label": "eat",
+      "speak": "eat",
+      "glyph": "🍽️",
+      "class": "action"
+    },
+    {
+      "id": "drink",
+      "label": "drink",
+      "speak": "drink",
+      "glyph": "🥤",
+      "class": "action"
+    },
+    {
+      "id": "help",
+      "label": "help",
+      "speak": "help",
+      "glyph": "🆘",
+      "class": "action"
+    },
+    {
+      "id": "play",
+      "label": "play",
+      "speak": "play",
+      "glyph": "🧸",
+      "class": "action"
+    },
+    {
+      "id": "stop",
+      "label": "stop",
+      "speak": "stop",
+      "glyph": "🛑",
+      "class": "action"
+    },
+    {
+      "id": "like",
+      "label": "like",
+      "speak": "like",
+      "glyph": "❤️",
+      "class": "action"
+    },
+    {
+      "id": "more",
+      "label": "more",
+      "speak": "more",
+      "glyph": "➕",
+      "class": "describer"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "speak": "finished",
+      "glyph": "✅",
+      "class": "describer"
+    },
+    {
+      "id": "again",
+      "label": "again",
+      "speak": "again",
+      "glyph": "🔁",
+      "class": "describer"
+    },
+    {
+      "id": "True",
+      "label": "yes",
+      "speak": "yes",
+      "glyph": "👍",
+      "class": "social"
+    },
+    {
+      "id": "False",
+      "label": "no",
+      "speak": "no",
+      "glyph": "👎",
+      "class": "social"
+    },
+    {
+      "id": "please",
+      "label": "please",
+      "speak": "please",
+      "glyph": "🙏",
+      "class": "social"
+    },
+    {
+      "id": "thanks",
+      "label": "thank you",
+      "speak": "thank you",
+      "glyph": "🤝",
+      "class": "social"
+    },
+    {
+      "id": "hello",
+      "label": "hello",
+      "speak": "hello",
+      "glyph": "👋",
+      "class": "social"
+    },
+    {
+      "id": "what",
+      "label": "what",
+      "speak": "what",
+      "glyph": "❓",
+      "class": "question"
+    },
+    {
+      "id": "water",
+      "label": "water",
+      "speak": "water",
+      "glyph": "💧",
+      "class": "noun"
+    },
+    {
+      "id": "food",
+      "label": "food",
+      "speak": "food",
+      "glyph": "🍚",
+      "class": "noun"
+    },
+    {
+      "id": "toilet",
+      "label": "toilet",
+      "speak": "toilet",
+      "glyph": "🚽",
+      "class": "noun"
+    },
+    {
+      "id": "hurt",
+      "label": "hurt",
+      "speak": "hurt",
+      "glyph": "🤕",
+      "class": "describer"
+    },
+    {
+      "id": "hot",
+      "label": "hot",
+      "speak": "hot",
+      "glyph": "🔥",
+      "class": "describer"
+    },
+    {
+      "id": "where",
+      "label": "where",
+      "speak": "where",
+      "glyph": "📍",
+      "class": "question"
+    }
+  ]
+}

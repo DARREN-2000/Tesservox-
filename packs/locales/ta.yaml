@@ -1,0 +1,49 @@
+locale: ta
+name: தமிழ் core 30
+voice: ta-IN
+
+# NEEDS A NATIVE REVIEW PASS.
+#
+# These are seed labels. Tamil AAC needs decisions a machine cannot make:
+#   * imperative vs infinitive on verbs (சாப்பிடு vs சாப்பிட)
+#   * politeness register — a child addressing a parent vs a teacher
+#   * spoken vs written register, which diverge sharply in Tamil
+#   * regional variants (Chennai / Madurai / Sri Lankan Tamil)
+#
+# The whole point of this project is that these calls get made by a native
+# speaker and a therapist, not by a translation API. Open a PR.
+labels:
+  i: நான்
+  you: நீ
+  my: என்
+  mother: அம்மா
+  father: அப்பா
+  friend: நண்பர்
+
+  want: வேண்டும்
+  go: போ
+  come: வா
+  eat: சாப்பிடு
+  drink: குடி
+  help: உதவி
+
+  play: விளையாடு
+  stop: நிறுத்து
+  like: பிடிக்கும்
+  more: இன்னும்
+  finished: முடிந்தது
+  again: மீண்டும்
+
+  yes: ஆமாம்
+  no: இல்லை
+  please: தயவுசெய்து
+  thanks: நன்றி
+  hello: வணக்கம்
+  what: என்ன
+
+  water: தண்ணீர்
+  food: சாப்பாடு
+  toilet: கழிவறை
+  hurt: வலி
+  hot: சூடு
+  where: எங்கே

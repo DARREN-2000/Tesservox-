@@ -1,0 +1,58 @@
+# The core vocabulary, authored ONCE.
+#
+# Locale files under packs/locales/ supply only labels. That is deliberate:
+# "every locale has the same core vocabulary" becomes a structural property the
+# compiler can enforce, instead of a promise in a README. A missing translation
+# is a build failure, not a blank tile discovered by a child mid-sentence.
+#
+# ORDER IS THE LAYOUT (row-major). Never reorder these entries. Competent AAC
+# use is motor learning: the user reaches for "want" because their hand knows
+# where "want" is. Moving a word is worse than removing it.
+#
+# Word choice follows core-vocabulary practice: high-frequency, reusable words
+# that combine, rather than a long tail of nouns. "more" is worth ten nouns.
+
+grid:
+  rows: 5
+  cols: 6
+
+words:
+  # Row 1 — people (yellow)
+  - { id: i,        class: people,    glyph: "🙋" }
+  - { id: you,      class: people,    glyph: "👉" }
+  - { id: my,       class: people,    glyph: "🤚" }
+  - { id: mother,   class: people,    glyph: "👩" }
+  - { id: father,   class: people,    glyph: "👨" }
+  - { id: friend,   class: people,    glyph: "🧑" }
+
+  # Row 2 — actions (green)
+  - { id: want,     class: action,    glyph: "🤲" }
+  - { id: go,       class: action,    glyph: "➡️" }
+  - { id: come,     class: action,    glyph: "⬅️" }
+  - { id: eat,      class: action,    glyph: "🍽️" }
+  - { id: drink,    class: action,    glyph: "🥤" }
+  - { id: help,     class: action,    glyph: "🆘" }
+
+  # Row 3 — actions and describers
+  - { id: play,     class: action,    glyph: "🧸" }
+  - { id: stop,     class: action,    glyph: "🛑" }
+  - { id: like,     class: action,    glyph: "❤️" }
+  - { id: more,     class: describer, glyph: "➕" }
+  - { id: finished, class: describer, glyph: "✅" }
+  - { id: again,    class: describer, glyph: "🔁" }
+
+  # Row 4 — social words and questions
+  - { id: yes,      class: social,    glyph: "👍" }
+  - { id: no,       class: social,    glyph: "👎" }
+  - { id: please,   class: social,    glyph: "🙏" }
+  - { id: thanks,   class: social,    glyph: "🤝" }
+  - { id: hello,    class: social,    glyph: "👋" }
+  - { id: what,     class: question,  glyph: "❓" }
+
+  # Row 5 — nouns, feelings, place
+  - { id: water,    class: noun,      glyph: "💧" }
+  - { id: food,     class: noun,      glyph: "🍚" }
+  - { id: toilet,   class: noun,      glyph: "🚽" }
+  - { id: hurt,     class: describer, glyph: "🤕" }
+  - { id: hot,      class: describer, glyph: "🔥" }
+  - { id: where,    class: question,  glyph: "📍" }

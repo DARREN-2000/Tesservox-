@@ -1,0 +1,219 @@
+{
+  "locale": "ta",
+  "name": "தமிழ் core 30",
+  "voice": "ta-IN",
+  "rows": 5,
+  "cols": 6,
+  "tiles": [
+    {
+      "id": "i",
+      "label": "நான்",
+      "speak": "நான்",
+      "glyph": "🙋",
+      "class": "people"
+    },
+    {
+      "id": "you",
+      "label": "நீ",
+      "speak": "நீ",
+      "glyph": "👉",
+      "class": "people"
+    },
+    {
+      "id": "my",
+      "label": "என்",
+      "speak": "என்",
+      "glyph": "🤚",
+      "class": "people"
+    },
+    {
+      "id": "mother",
+      "label": "அம்மா",
+      "speak": "அம்மா",
+      "glyph": "👩",
+      "class": "people"
+    },
+    {
+      "id": "father",
+      "label": "அப்பா",
+      "speak": "அப்பா",
+      "glyph": "👨",
+      "class": "people"
+    },
+    {
+      "id": "friend",
+      "label": "நண்பர்",
+      "speak": "நண்பர்",
+      "glyph": "🧑",
+      "class": "people"
+    },
+    {
+      "id": "want",
+      "label": "வேண்டும்",
+      "speak": "வேண்டும்",
+      "glyph": "🤲",
+      "class": "action"
+    },
+    {
+      "id": "go",
+      "label": "போ",
+      "speak": "போ",
+      "glyph": "➡️",
+      "class": "action"
+    },
+    {
+      "id": "come",
+      "label": "வா",
+      "speak": "வா",
+      "glyph": "⬅️",
+      "class": "action"
+    },
+    {
+      "id": "eat",
+      "label": "சாப்பிடு",
+      "speak": "சாப்பிடு",
+      "glyph": "🍽️",
+      "class": "action"
+    },
+    {
+      "id": "drink",
+      "label": "குடி",
+      "speak": "குடி",
+      "glyph": "🥤",
+      "class": "action"
+    },
+    {
+      "id": "help",
+      "label": "உதவி",
+      "speak": "உதவி",
+      "glyph": "🆘",
+      "class": "action"
+    },
+    {
+      "id": "play",
+      "label": "விளையாடு",
+      "speak": "விளையாடு",
+      "glyph": "🧸",
+      "class": "action"
+    },
+    {
+      "id": "stop",
+      "label": "நிறுத்து",
+      "speak": "நிறுத்து",
+      "glyph": "🛑",
+      "class": "action"
+    },
+    {
+      "id": "like",
+      "label": "பிடிக்கும்",
+      "speak": "பிடிக்கும்",
+      "glyph": "❤️",
+      "class": "action"
+    },
+    {
+      "id": "more",
+      "label": "இன்னும்",
+      "speak": "இன்னும்",
+      "glyph": "➕",
+      "class": "describer"
+    },
+    {
+      "id": "finished",
+      "label": "முடிந்தது",
+      "speak": "முடிந்தது",
+      "glyph": "✅",
+      "class": "describer"
+    },
+    {
+      "id": "again",
+      "label": "மீண்டும்",
+      "speak": "மீண்டும்",
+      "glyph": "🔁",
+      "class": "describer"
+    },
+    {
+      "id": "True",
+      "label": "ஆமாம்",
+      "speak": "ஆமாம்",
+      "glyph": "👍",
+      "class": "social"
+    },
+    {
+      "id": "False",
+      "label": "இல்லை",
+      "speak": "இல்லை",
+      "glyph": "👎",
+      "class": "social"
+    },
+    {
+      "id": "please",
+      "label": "தயவுசெய்து",
+      "speak": "தயவுசெய்து",
+      "glyph": "🙏",
+      "class": "social"
+    },
+    {
+      "id": "thanks",
+      "label": "நன்றி",
+      "speak": "நன்றி",
+      "glyph": "🤝",
+      "class": "social"
+    },
+    {
+      "id": "hello",
+      "label": "வணக்கம்",
+      "speak": "வணக்கம்",
+      "glyph": "👋",
+      "class": "social"
+    },
+    {
+      "id": "what",
+      "label": "என்ன",
+      "speak": "என்ன",
+      "glyph": "❓",
+      "class": "question"
+    },
+    {
+      "id": "water",
+      "label": "தண்ணீர்",
+      "speak": "தண்ணீர்",
+      "glyph": "💧",
+      "class": "noun"
+    },
+    {
+      "id": "food",
+      "label": "சாப்பாடு",
+      "speak": "சாப்பாடு",
+      "glyph": "🍚",
+      "class": "noun"
+    },
+    {
+      "id": "toilet",
+      "label": "கழிவறை",
+      "speak": "கழிவறை",
+      "glyph": "🚽",
+      "class": "noun"
+    },
+    {
+      "id": "hurt",
+      "label": "வலி",
+      "speak": "வலி",
+      "glyph": "🤕",
+      "class": "describer"
+    },
+    {
+      "id": "hot",
+      "label": "சூடு",
+      "speak": "சூடு",
+      "glyph": "🔥",
+      "class": "describer"
+    },
+    {
+      "id": "where",
+      "label": "எங்கே",
+      "speak": "எங்கே",
+      "glyph": "📍",
+      "class": "question"
+    }
+  ]
+}

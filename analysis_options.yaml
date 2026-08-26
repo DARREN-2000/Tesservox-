@@ -1,0 +1,26 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    # An unhandled enum case in the scanning or access code is a bug that ships
+    # to someone who cannot tell us it broke. Make it fatal.
+    missing_enum_case_in_switch: error
+    unawaited_futures: error
+    todo: ignore
+  exclude:
+    - "**/*.g.dart"
+
+linter:
+  rules:
+    always_declare_return_types: true
+    avoid_print: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_final_locals: true
+    require_trailing_commas: true
+    unnecessary_await_in_return: true
+    use_super_parameters: true

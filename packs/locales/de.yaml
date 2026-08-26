@@ -1,0 +1,42 @@
+locale: de
+name: Deutsch Kernwortschatz 30
+voice: de-DE
+
+# German raises the same register question as Tamil: du vs Sie. A child's board
+# uses du. An adult stroke patient's board very often must not.
+# That is a per-user decision, so it belongs in a pack, not in code.
+labels:
+  i: ich
+  you: du
+  my: mein
+  mother: Mama
+  father: Papa
+  friend: Freund
+
+  want: will
+  go: gehen
+  come: komm
+  eat: essen
+  drink: trinken
+  help: Hilfe
+
+  play: spielen
+  stop: stopp
+  like: mag
+  more: mehr
+  finished: fertig
+  again: nochmal
+
+  yes: ja
+  no: nein
+  please: bitte
+  thanks: danke
+  hello: hallo
+  what: was
+
+  water: Wasser
+  food: Essen
+  toilet: Toilette
+  hurt: weh
+  hot: heiß
+  where: wo

@@ -1,0 +1,219 @@
+{
+  "locale": "de",
+  "name": "Deutsch Kernwortschatz 30",
+  "voice": "de-DE",
+  "rows": 5,
+  "cols": 6,
+  "tiles": [
+    {
+      "id": "i",
+      "label": "ich",
+      "speak": "ich",
+      "glyph": "🙋",
+      "class": "people"
+    },
+    {
+      "id": "you",
+      "label": "du",
+      "speak": "du",
+      "glyph": "👉",
+      "class": "people"
+    },
+    {
+      "id": "my",
+      "label": "mein",
+      "speak": "mein",
+      "glyph": "🤚",
+      "class": "people"
+    },
+    {
+      "id": "mother",
+      "label": "Mama",
+      "speak": "Mama",
+      "glyph": "👩",
+      "class": "people"
+    },
+    {
+      "id": "father",
+      "label": "Papa",
+      "speak": "Papa",
+      "glyph": "👨",
+      "class": "people"
+    },
+    {
+      "id": "friend",
+      "label": "Freund",
+      "speak": "Freund",
+      "glyph": "🧑",
+      "class": "people"
+    },
+    {
+      "id": "want",
+      "label": "will",
+      "speak": "will",
+      "glyph": "🤲",
+      "class": "action"
+    },
+    {
+      "id": "go",
+      "label": "gehen",
+      "speak": "gehen",
+      "glyph": "➡️",
+      "class": "action"
+    },
+    {
+      "id": "come",
+      "label": "komm",
+      "speak": "komm",
+      "glyph": "⬅️",
+      "class": "action"
+    },
+    {
+      "id": "eat",
+      "label": "essen",
+      "speak": "essen",
+      "glyph": "🍽️",
+      "class": "action"
+    },
+    {
+      "id": "drink",
+      "label": "trinken",
+      "speak": "trinken",
+      "glyph": "🥤",
+      "class": "action"
+    },
+    {
+      "id": "help",
+      "label": "Hilfe",
+      "speak": "Hilfe",
+      "glyph": "🆘",
+      "class": "action"
+    },
+    {
+      "id": "play",
+      "label": "spielen",
+      "speak": "spielen",
+      "glyph": "🧸",
+      "class": "action"
+    },
+    {
+      "id": "stop",
+      "label": "stopp",
+      "speak": "stopp",
+      "glyph": "🛑",
+      "class": "action"
+    },
+    {
+      "id": "like",
+      "label": "mag",
+      "speak": "mag",
+      "glyph": "❤️",
+      "class": "action"
+    },
+    {
+      "id": "more",
+      "label": "mehr",
+      "speak": "mehr",
+      "glyph": "➕",
+      "class": "describer"
+    },
+    {
+      "id": "finished",
+      "label": "fertig",
+      "speak": "fertig",
+      "glyph": "✅",
+      "class": "describer"
+    },
+    {
+      "id": "again",
+      "label": "nochmal",
+      "speak": "nochmal",
+      "glyph": "🔁",
+      "class": "describer"
+    },
+    {
+      "id": "True",
+      "label": "ja",
+      "speak": "ja",
+      "glyph": "👍",
+      "class": "social"
+    },
+    {
+      "id": "False",
+      "label": "nein",
+      "speak": "nein",
+      "glyph": "👎",
+      "class": "social"
+    },
+    {
+      "id": "please",
+      "label": "bitte",
+      "speak": "bitte",
+      "glyph": "🙏",
+      "class": "social"
+    },
+    {
+      "id": "thanks",
+      "label": "danke",
+      "speak": "danke",
+      "glyph": "🤝",
+      "class": "social"
+    },
+    {
+      "id": "hello",
+      "label": "hallo",
+      "speak": "hallo",
+      "glyph": "👋",
+      "class": "social"
+    },
+    {
+      "id": "what",
+      "label": "was",
+      "speak": "was",
+      "glyph": "❓",
+      "class": "question"
+    },
+    {
+      "id": "water",
+      "label": "Wasser",
+      "speak": "Wasser",
+      "glyph": "💧",
+      "class": "noun"
+    },
+    {
+      "id": "food",
+      "label": "Essen",
+      "speak": "Essen",
+      "glyph": "🍚",
+      "class": "noun"
+    },
+    {
+      "id": "toilet",
+      "label": "Toilette",
+      "speak": "Toilette",
+      "glyph": "🚽",
+      "class": "noun"
+    },
+    {
+      "id": "hurt",
+      "label": "weh",
+      "speak": "weh",
+      "glyph": "🤕",
+      "class": "describer"
+    },
+    {
+      "id": "hot",
+      "label": "heiß",
+      "speak": "heiß",
+      "glyph": "🔥",
+      "class": "describer"
+    },
+    {
+      "id": "where",
+      "label": "wo",
+      "speak": "wo",
+      "glyph": "📍",
+      "class": "question"
+    }
+  ]
+}

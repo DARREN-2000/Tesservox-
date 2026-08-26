@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "packs": [
+    {
+      "locale": "de",
+      "name": "Deutsch Kernwortschatz 30",
+      "voice": "de-DE",
+      "tileCount": 30,
+      "sha256": "3cfe6b35382b5d4c8ca8a5dff0d48d06672335132f3603253eab7e340ee3bd4f"
+    },
+    {
+      "locale": "en",
+      "name": "English core 30",
+      "voice": "en-US",
+      "tileCount": 30,
+      "sha256": "69ee5fc0db829f56cf3cd55a37dce42db55172c224960d8d6f8a8788c8bfd7ef"
+    },
+    {
+      "locale": "ta",
+      "name": "தமிழ் core 30",
+      "voice": "ta-IN",
+      "tileCount": 30,
+      "sha256": "efac7192d60d4670d5c657a069423dd23a981a7cbec941a347d3d087c482a3c9"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+locale: en
+name: English core 30
+voice: en-US
+
+# Labels only. Ids and layout come from packs/core_words.yaml.
+# Add an optional `speak:` map when the spoken form differs from the label
+# (register, inflection, or a label short enough to fit a 96px tile).
+labels:
+  i: I
+  you: you
+  my: my
+  mother: mum
+  father: dad
+  friend: friend
+
+  want: want
+  go: go
+  come: come
+  eat: eat
+  drink: drink
+  help: help
+
+  play: play
+  stop: stop
+  like: like
+  more: more
+  finished: finished
+  again: again
+
+  yes: "yes"
+  no: "no"
+  please: please
+  thanks: thank you
+  hello: hello
+  what: what
+
+  water: water
+  food: food
+  toilet: toilet
+  hurt: hurt
+  hot: hot
+  where: where
