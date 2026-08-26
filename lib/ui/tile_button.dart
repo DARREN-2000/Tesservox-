@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../access/accessibility_controller.dart';
 import '../domain/board.dart';
@@ -43,6 +44,11 @@ class TileButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color background = wordClassColor(tile.wordClass);
 
+    void handlePress() {
+      HapticFeedback.lightImpact();
+      onPressed();
+    }
+
     return RepaintBoundary(
       child: Semantics(
         label: tile.label,
@@ -51,25 +57,41 @@ class TileButton extends StatelessWidget {
         child: AnimatedScale(
           duration: const Duration(milliseconds: 90),
           scale: highlighted ? 1.04 : 1.0,
-          child: Material(
-            color: background,
-            borderRadius: BorderRadius.circular(12),
-            child: DwellDetector(
-              onTrigger: onPressed,
-              child: InkWell(
-                onTap: onPressed,
-                borderRadius: BorderRadius.circular(12),
-                child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: highlighted
-                        ? const Color(0xFF102A43)
-                        : Colors.black12,
-                    width: highlighted ? 5 : 1,
-                  ),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.08),
+                  blurRadius: 12,
+                  offset: const Offset(0, 4),
                 ),
-                padding: const EdgeInsets.all(4),
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.04),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Material(
+              color: background,
+              borderRadius: BorderRadius.circular(12),
+              child: DwellDetector(
+                onTrigger: handlePress,
+                child: InkWell(
+                  onTap: handlePress,
+                  borderRadius: BorderRadius.circular(12),
+                  child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: highlighted
+                          ? const Color(0xFF102A43)
+                          : Colors.black12,
+                      width: highlighted ? 5 : 1,
+                    ),
+                  ),
+                  padding: const EdgeInsets.all(4),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
