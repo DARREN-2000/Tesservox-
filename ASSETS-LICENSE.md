@@ -1,7 +1,7 @@
 # Symbols, voices and licensing
 
 Read this before adding any symbol set or voice. AAC symbol licensing is a
-minefield, and getting it wrong would make Vaani undistributable — which would
+minefield, and getting it wrong would make Tesservox undistributable — which would
 defeat the entire point of the project.
 
 ## Why the shipped glyphs are emoji
@@ -38,7 +38,7 @@ app, not just in a repo file.
 
 ## Voices
 
-Today Vaani calls the platform TTS via `flutter_tts`. That is a real limitation,
+Today Tesservox calls the platform TTS via `flutter_tts`. That is a real limitation,
 not a design choice: on a cheap Android tablet there may be **no Tamil voice
 installed at all**, which is precisely the problem this app exists to solve.
 
@@ -54,7 +54,7 @@ installed at all**, which is precisely the problem this app exists to solve.
 recording each voice model's licence in this file. See the TODO in
 `lib/speech/speaker.dart`.
 
-## Vaani's own content
+## Tesservox's own content
 
 - Code: MIT (see `LICENSE`).
 - The vocabulary packs in `packs/` (word lists, labels, translations): MIT,
