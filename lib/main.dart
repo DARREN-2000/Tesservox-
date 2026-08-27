@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sentry_flutter/sentry_flutter.dart';
 
 import 'app.dart';
 import 'data/settings_store.dart';
@@ -40,7 +39,7 @@ Future<void> main() async {
             settingsStoreProvider.overrideWithValue(settings),
             utteranceLogProvider.overrideWithValue(log),
           ],
-          child: const VaaniApp(),
+          child: const TesservoxApp(),
         ),
       );
     },

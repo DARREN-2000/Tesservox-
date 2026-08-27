@@ -10,7 +10,7 @@ library;
 ///
 /// The colour convention is not decoration -- speech and language therapists
 /// already teach it, and paper boards in the same classroom use it. Inventing
-/// our own palette would make Vaani harder to learn, not prettier.
+/// our own palette would make Tesservox harder to learn, not prettier.
 enum WordClass {
   /// Yellow: pronouns and people.
   people,

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'ui/speak_page.dart';
 
-class VaaniApp extends StatelessWidget {
-  const VaaniApp({super.key});
+class TesservoxApp extends StatelessWidget {
+  const TesservoxApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Vaani',
+      title: 'Tesservox',
       debugShowCheckedModeBanner: false,
       theme: _theme(),
       builder: (BuildContext context, Widget? child) {

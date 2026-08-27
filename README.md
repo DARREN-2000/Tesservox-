@@ -1,60 +1,78 @@
-# 💠 Tesservox
+# Tesservox | Privacy-First AAC Platform
 
-[![CI](https://github.com/DARREN-2000/tesservox/actions/workflows/ci.yaml/badge.svg)](https://github.com/DARREN-2000/tesservox/actions/workflows/ci.yaml)
-[![GitHub Pages](https://github.com/DARREN-2000/tesservox/actions/workflows/pages.yml/badge.svg)](https://github.com/DARREN-2000/tesservox/actions/workflows/pages.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0.0-success.svg)](https://github.com/DARREN-2000/tesservox/releases)
+**Version:** 2.0.0
 
-> The ultimate, secure, offline-first AAC platform for unparalleled speech independence.
+Tesservox is an offline-first, highly testable Augmentative and Alternative Communication (AAC) platform built in Flutter. It is designed around deterministic accessibility engines, ensuring communication remains robust, private, and independent of internet connectivity.
 
-![Tesservox Demo](https://via.placeholder.com/800x400.gif?text=Tesservox+AAC+Demo+GIF+Here)
+## Core Philosophy
 
-**Tesservox** (formerly vaani) is a free, offline, multilingual AAC (augmentative and alternative communication) system designed for individuals who cannot speak. It runs on minimal hardware, requires no cloud synchronization, and respects user privacy by keeping all operations local.
+1. **Absolute Privacy:** No data telemetry. The application is completely offline. 
+2. **Determinism:** The scanning engine operates independently of UI jank, ensuring selections map monotonically to user intent.
+3. **Accessibility First:** Custom physics-based dwell selection (bypassing the need for physical clicks) integrated directly into the semantic tree.
 
-## ✨ Key Features
+## Architecture
 
-- **Offline-First:** Does not require an internet connection, ever.
-- **Privacy Guaranteed:** No accounts, no data telemetry.
-- **Cross-Platform:** Builds effortlessly on Android, Web, and Desktop.
-- **Accessible Interface:** Optimized for diverse motor needs.
-
-## 🚀 Quick Start
-
-Ensure you have [Flutter](https://flutter.dev/) installed, then get up and running instantly:
-
-```bash
-# Get dependencies
-flutter pub get
-
-# Run the app locally
-make run
-```
-
-## 🏗 Architecture
-
-Tesservox strictly adheres to a domain-driven architectural pattern utilizing Riverpod for pure-Dart dependency injection, ensuring the application stays fast and maintainable.
+Tesservox uses a layered Flutter architecture with isolated domain logic, Riverpod state management, and deterministic, testable accessibility engines. 
 
 ```mermaid
-graph TD;
-    UI[Flutter UI Layer] --> DI[Riverpod State/DI Layer];
-    DI --> Domain[Core Domain Logic];
-    Domain --> LocalStorage[Shared Preferences];
-    Domain --> TTS[Platform TTS];
+graph TD
+    UI[Flutter UI / TileButton] --> |Dwell/Click| ScanEngine
+    UI --> |Reads State| Riverpod[Riverpod State]
+    ScanEngine[Dwell-based Scan Engine] --> Domain[Scanning Domain Logic]
+    Domain --> OpStore[HLC/CRDT OpStore]
+    Riverpod --> OpStore
+    Riverpod --> PlatformTTS[Platform TTS Integration]
 ```
 
-## 🐋 Dockerization
+## What Works Today
 
-We use a highly optimized multi-stage build.
+- ✅ **Dwell-Based Selection:** A physics-based hover-timer that allows users to select tiles without clicking.
+- ✅ **Platform-TTS Integration:** Uses standard OS-level text-to-speech for generating spoken output across multiple locales.
+- ✅ **Offline Vocabulary:** Vocabulary packs and state are strictly local, validated by pack hashes.
+- ✅ **Deterministic Scanning:** A purely logical scanning engine separated completely from Flutter's rendering loop.
+- ✅ **Test Infrastructure:** Comprehensive CI, CodeQL scanning, and PR-agent configurations are integrated into the repository.
 
-| Command | Action |
-| :--- | :--- |
-| `make docker-build` | Builds the Tesservox Docker image |
-| `docker-compose up` | Runs the services via Docker Compose |
+### Known Limitations (Architectural Prototype)
 
-## 🤝 Governance & Community
+Tesservox is currently configured as a functional architectural prototype:
+- **Placeholder Symbols:** The current UI uses standard Unicode emoji. These are *architectural placeholders* and are not formally licensed AAC symbols.
+- **Platform TTS Dependency:** While the vocabulary is fully offline, speech generation currently relies on the host device's built-in platform TTS engines.
+- **Dwell vs. Gaze:** Selection is currently pointer-dwell based. Native camera-based gaze tracking is planned for future releases.
 
-Tesservox operates under strict open-source governance. Please review:
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [Security Policy](./SECURITY.md)
-- [Contributing Guidelines](./CONTRIBUTING.md)
-- [Maintainers](./MAINTAINERS.md)
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/DARREN-2000/Tesservox.git
+cd Tesservox
+
+# Install dependencies
+flutter pub get
+
+# Run the test suite
+flutter test
+
+# Run the app
+flutter run
+```
+
+## Testing & Quality
+
+The testing suite explicitly verifies:
+- Monotonic HLC timestamps
+- Convergence under shuffled operations
+- Idempotent scanning state transitions
+- Debounce behavior & accessibility semantics
+- Vocabulary-pack integrity
+
+Run the full CI suite locally:
+```bash
+flutter analyze
+flutter test
+flutter build web
+```
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details. 
+*Note: The placeholder assets and emoji currently used are subject to standard Unicode licensing and are intended only for prototype demonstration.*

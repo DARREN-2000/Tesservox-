@@ -18,7 +18,7 @@ class AccessibilityController {
   final AccessSettings settings;
 }
 
-/// A widget that enables dwell (gaze tracking) interactions.
+/// A widget that enables dwell (dwell selection) interactions.
 ///
 /// When [InputMethod.dwell] is active, resting the pointer on this widget
 /// for the [AccessSettings.dwell] duration will automatically trigger [onTrigger].

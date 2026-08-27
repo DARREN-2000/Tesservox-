@@ -7,7 +7,7 @@ import 'hlc.dart';
 /// max, which is commutative, associative and **idempotent** -- so a re-scanned
 /// QR bundle, a duplicated file or a replayed log can never fork a board.
 ///
-/// A full CRDT (RGA, Yjs, Automerge) buys ordered-list convergence. Vaani does
+/// A full CRDT (RGA, Yjs, Automerge) buys ordered-list convergence. Tesservox does
 /// not need it: tiles live at fixed grid positions on purpose, because motor
 /// planning depends on a word never moving. Last-writer-wins per field is the
 /// correct amount of machinery here, and that trade-off is deliberate.

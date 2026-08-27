@@ -4,7 +4,7 @@ description: >-
   for people who cannot speak. Runs on cheap Android hardware, needs no account,
   and never sends a word off the device.
 publish_to: none
-version: 0.1.0+1
+version: 2.0.0+1
 repository: https://github.com/DARREN-2000/tesservox
 
 environment:
@@ -19,8 +19,7 @@ dependencies:
   flutter_tts: ^4.0.2
   # Access settings must survive a reboot on a shared school tablet.
   shared_preferences: ^2.2.3
-  sentry_flutter: ^8.0.0
-  flutter_localizations:
+    flutter_localizations:
     sdk: flutter
 
 dev_dependencies:

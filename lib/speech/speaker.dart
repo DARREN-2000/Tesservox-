@@ -2,7 +2,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 
 /// What the app needs from a voice.
 ///
-/// Deliberately narrow. The whole premise of Vaani is that this interface will
+/// Deliberately narrow. The whole premise of Tesservox is that this interface will
 /// eventually have a third implementation -- a bundled offline neural voice via
 /// `dart:ffi` -- for the languages platform TTS simply does not ship.
 abstract class Speaker {

@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 /// A hybrid logical clock.
 ///
-/// Vaani syncs peer to peer -- a parent's phone and a child's tablet meeting
+/// Tesservox syncs peer to peer -- a parent's phone and a child's tablet meeting
 /// over QR or the local network, with no server and no accounts. Device clocks
 /// on cheap tablets are routinely wrong by hours, and a school tablet that has
 /// never seen the internet may think it is 1970.
