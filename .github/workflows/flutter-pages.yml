@@ -33,7 +33,7 @@ jobs:
         run: flutter pub get
 
       - name: Build Web App
-        run: flutter build web --release --base-href "/Tesservox/"
+        run: flutter build web --release --base-href "/Tesservox-/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
