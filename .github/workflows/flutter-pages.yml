@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Enable web
+        run: flutter create . --platforms web
+
       - name: Build Web App
         run: flutter build web --release --base-href "/Tesservox-/"
 
