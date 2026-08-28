@@ -32,7 +32,8 @@ class ScanEngine extends ChangeNotifier {
 
   Scanner _scanner;
   Timer? _timer;
-  DateTime? _lastActivation;
+  DateTime? _lastNext;
+  DateTime? _lastSelect;
 
   bool get isScanning => _settings.isScanning;
 
@@ -74,14 +75,14 @@ class ScanEngine extends ChangeNotifier {
 
   /// "Next" switch, or an auto-scan tick.
   void pressNext() {
-    if (!_settings.isScanning || !_accept()) return;
+    if (!_settings.isScanning || !_acceptNext()) return;
     _scanner.advance();
     notifyListeners();
   }
 
   /// "Select" switch.
   void pressSelect() {
-    if (!_settings.isScanning || !_accept()) return;
+    if (!_settings.isScanning || !_acceptSelect()) return;
     final int? index = _scanner.select();
     notifyListeners();
     // Fire after notifying so the highlight has already reset if the callback
@@ -97,13 +98,23 @@ class ScanEngine extends ChangeNotifier {
 
   /// Tremor filter. Returns false when this activation arrived too soon after
   /// the previous one to be a separate intention.
-  bool _accept() {
+  bool _acceptNext() {
     final DateTime now = _clock();
-    final DateTime? last = _lastActivation;
+    final DateTime? last = _lastNext;
     if (last != null && now.difference(last) < _settings.debounce) {
       return false;
     }
-    _lastActivation = now;
+    _lastNext = now;
+    return true;
+  }
+
+  bool _acceptSelect() {
+    final DateTime now = _clock();
+    final DateTime? last = _lastSelect;
+    if (last != null && now.difference(last) < _settings.debounce) {
+      return false;
+    }
+    _lastSelect = now;
     return true;
   }
 
