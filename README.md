@@ -6,7 +6,7 @@ Tesservox is an offline-first, highly testable Augmentative and Alternative Comm
 
 ## Core Philosophy
 
-1. **Absolute Privacy:** No data telemetry. The application is completely offline. 
+1. **Privacy-first:** Tesservox contains no analytics or telemetry and stores usage data locally. Vocabulary processing stays on-device; speech uses the device's configured TTS engine.
 2. **Determinism:** The scanning engine operates independently of UI jank, ensuring selections map monotonically to user intent.
 3. **Accessibility First:** Custom physics-based dwell selection (bypassing the need for physical clicks) integrated directly into the semantic tree.
 
@@ -28,7 +28,7 @@ graph TD
 
 - ✅ **Dwell-Based Selection:** A physics-based hover-timer that allows users to select tiles without clicking.
 - ✅ **Platform-TTS Integration:** Uses standard OS-level text-to-speech for generating spoken output across multiple locales.
-- ✅ **Offline Vocabulary:** Vocabulary packs and state are strictly local, validated by pack hashes.
+- ✅ **Offline Vocabulary:** Vocabulary packs and state are strictly local, integrity-tested with pack hashes.
 - ✅ **Deterministic Scanning:** A purely logical scanning engine separated completely from Flutter's rendering loop.
 - ✅ **Test Infrastructure:** Comprehensive CI, CodeQL scanning, and PR-agent configurations are integrated into the repository.
 
